@@ -1,39 +1,32 @@
-Here's some gerbers to get yourself into trouble with. You should be able to just drop the gerber zip file into JLCPCB. If you also want to have some of the 
-PCBA done, I've included a BOM and CPL that has all the info for the diodes and the battery connector.
+# Gerber Files and PCBA Information
 
-****UPDATE 05/20/23 PLEASE READ*****
+Here are gerber files that you can use. Simply drag and drop the provided gerber zip file into JLCPCB. For those interested in partial PCBA, I've furnished both a BOM and CPL with details for the diodes and battery connector.
 
-If you do not opt for PCBA, please note that the diode markers should face the square through hole connection.
+---
 
-It's not the end of the world if you go the other way, but the firmware has to be adjusted to account for that. I've created a new generic firmware based on the startup files I included that goes row2col instead of col2row.
+**UPDATE (05/20/23)**
 
-****END UPDATE****
+For those not using PCBA, it's imperative to ensure that the diode markers align with the square through-hole connection. It's not catastrophic if you orient them differently, but you'll need to tweak the firmware to account for the inversion. I've made available a generic firmware, derived from the provided startup files, that shifts from `col2row` to `row2col`.
 
-SVG files can be imported into Fusion 360 to create a sketch to start the case making fun. They are pulled from the PCB Edge Cuts.
+---
 
-***EDIT***
+SVG files are available for import into Fusion 360. This allows you to draft a sketch as a starting point for designing a case. These SVGs are extracted from the PCB Edge Cuts.
 
-04/14/23 Updated ZMK starter files to work with latest ZMK updates.
+## **Edit Log:**
 
-04/09/23 Adding some links to parts and pics.
+- **04/14/23**: Updated the ZMK starter files to be compatible with the latest ZMK versions.
+- **04/09/23**: Added links to parts and images.
+- **03/12/23**: Incorporated ZMK starter files. Place these in the `boards/shields` directory of your ZMK branch and update the `build.yml` accordingly.
 
-More pics to look at for guidance on building: https://imgur.com/a/QKp5wG5
+## **Resources and Links:**
 
-Power switches: https://www.amazon.com/gp/product/B0826XVZ8M/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+- **Build Guidance Images**: [View here](https://imgur.com/a/QKp5wG5)
+- **Power Switches**: [Available on Amazon](https://www.amazon.com/gp/product/B0826XVZ8M/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+- **XIAO BLE**: [Available on Seeedstudio](https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html)
+- **Batteries**: [Available on Amazon](https://www.amazon.com/HAC-006-BPJMX-C0-Battery-Nintendo-HAC-015-Controller/dp/B08L3FWXS4/ref=sr_1_4?crid=2YZOVGUSZ9RTX&keywords=HAC-006&qid=1679153921&s=electronics&sprefix=hac-006%2Celectronics%2C110&sr=1-4)
+- **Nice!View**: [Check it out here](https://typeractive.xyz/products/nice-view)
+- **Mill-Max Pins (Used on Nice!View)**: [Available on Digikey](https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/3320-0-00-15-00-00-03-0/4147392?s=N4IgTCBcDaIKIBECMSDMAWAtAOQSAugL5A)
+- **Low Profile Sockets (For Nice!View)**: [Available on Digikey](https://www.digikey.com/en/products/detail/aries-electronics/40-0518-10/261892)
 
-XIAO BLE: https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html
-
-Batteries: https://www.amazon.com/HAC-006-BPJMX-C0-Battery-Nintendo-HAC-015-Controller/dp/B08L3FWXS4/ref=sr_1_4?crid=2YZOVGUSZ9RTX&keywords=HAC-006&qid=1679153921&s=electronics&sprefix=hac-006%2Celectronics%2C110&sr=1-4
-
-Nice!View: https://typeractive.xyz/products/nice-view
-
-Mill-Max pins (used on Nice!View): https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/3320-0-00-15-00-00-03-0/4147392?s=N4IgTCBcDaIKIBECMSDMAWAtAOQSAugL5A
-
-Low profile sockets (used with Nice!View): https://www.digikey.com/en/products/detail/aries-electronics/40-0518-10/261892
-
-03/12/23 added in ZMK starter files. These should go in the boards/sheilds directory of your ZMK branch. Then go in and modify the build.yml to include it.
-
-If you get stuck on anything, the ZMK discord is very helpful. 
-
-https://zmk.dev/
+If you encounter any challenges, the [ZMK Discord](https://zmk.dev/) community is always ready to help.
 

@@ -1,4 +1,4 @@
-# Gerber Files and PCBA Information
+# Corne with choc switches and Xiao PCB
 
 Here are gerber files that you can use. Simply drag and drop the provided gerber zip file into JLCPCB. For those interested in partial PCBA, I've furnished both a BOM and CPL with details for the diodes and battery connector.
 
